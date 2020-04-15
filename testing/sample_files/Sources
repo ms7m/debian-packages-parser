@@ -1,0 +1,102 @@
+Package: 0ad
+Binary: 0ad
+Version: 0.0.23.1-2
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Vincent Cheng <vcheng@debian.org>, Ludovic Rousseau <rousseau@debian.org>
+Build-Depends: autoconf, debhelper (>= 10), dpkg-dev (>= 1.15.5), libboost-dev, libboost-filesystem-dev, libcurl4-gnutls-dev | libcurl4-dev, libenet-dev (>= 1.3), libgloox-dev (>= 1.0.10), libicu-dev, libminiupnpc-dev (>= 1.6), libnspr4-dev, libnvtt-dev (>= 2.0.8-1+dfsg-4~), libogg-dev, libopenal-dev, libpng-dev, libsdl2-dev (>= 2.0.2), libsodium-dev (>= 1.0.14), libvorbis-dev, libwxgtk3.0-dev | libwxgtk2.8-dev, libxcursor-dev, libxml2-dev, pkg-config, python, python3, zlib1g-dev
+Architecture: amd64 arm64 armhf i386 kfreebsd-amd64 kfreebsd-i386
+Standards-Version: 4.1.4
+Format: 3.0 (quilt)
+Files:
+ 00145aa3a05b2013a7232b5c5a800a84 2473 0ad_0.0.23.1-2.dsc
+ 4fa111410ea55de7a013406ac1013668 31922812 0ad_0.0.23.1.orig.tar.xz
+ 1c472844ea3bf28a875b7c6031e395f3 71708 0ad_0.0.23.1-2.debian.tar.xz
+Vcs-Browser: https://salsa.debian.org/games-team/0ad
+Vcs-Git: https://salsa.debian.org/games-team/0ad.git
+Checksums-Sha256:
+ 6af5313fb7c875c5aa4fdbcb6beb17131b60d6c440e59e2a14409688e8442744 2473 0ad_0.0.23.1-2.dsc
+ 01bff7641ee08cac896c54d518d7e4b01752513105558f212e3199d747512a37 31922812 0ad_0.0.23.1.orig.tar.xz
+ fe4a1943e2fa9fca4f9fa8f43e0e32f287bd2bbf93df1c7497b734784375fe46 71708 0ad_0.0.23.1-2.debian.tar.xz
+Homepage: http://play0ad.com/
+Package-List: 
+ 0ad deb games optional arch=amd64,arm64,armhf,i386,kfreebsd-amd64,kfreebsd-i386
+Directory: pool/main/0/0ad
+Priority: source
+Section: games
+
+Package: 0ad-data
+Binary: 0ad-data, 0ad-data-common
+Version: 0.0.23.1-1
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Vincent Cheng <vcheng@debian.org>, Ludovic Rousseau <rousseau@debian.org>
+Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.15.5)
+Architecture: all
+Standards-Version: 4.1.4
+Format: 3.0 (quilt)
+Files:
+ 5a9c8deb8597391e0fcde94f5dcb83db 2065 0ad-data_0.0.23.1-1.dsc
+ 4eee6b207892552cd3e0a408b15c191d 691280800 0ad-data_0.0.23.1.orig.tar.xz
+ a78c3b6f70d3e63b92a7d91a180ec982 12916 0ad-data_0.0.23.1-1.debian.tar.xz
+Vcs-Browser: https://salsa.debian.org/games-team/0ad-data
+Vcs-Git: https://salsa.debian.org/games-team/0ad-data.git
+Checksums-Sha256:
+ 5cb7013594a8f0084c79bc282454f054030ebe188b20993562e85e527a747960 2065 0ad-data_0.0.23.1-1.dsc
+ e11b4ade7ede954cbbdc1fe6e2e4b25ac6b8d5a644133b640ffc9b099338a713 691280800 0ad-data_0.0.23.1.orig.tar.xz
+ 00f0bcd7888b768e82a3ef171c8dcd7ca10eb55cd97e38ac51a2f7b9ad89da4e 12916 0ad-data_0.0.23.1-1.debian.tar.xz
+Homepage: http://play0ad.com/
+Package-List: 
+ 0ad-data deb games optional arch=all
+ 0ad-data-common deb games optional arch=all
+Directory: pool/main/0/0ad-data
+Priority: source
+Section: games
+
+Package: 0xffff
+Binary: 0xffff
+Version: 0.8-1
+Maintainer: Sebastian Reichel <sre@debian.org>
+Build-Depends: debhelper (>= 11~), libusb-dev
+Architecture: any
+Standards-Version: 4.1.5
+Format: 3.0 (quilt)
+Files:
+ 9422bda401dec7ce63541b95f8776898 1807 0xffff_0.8-1.dsc
+ 5b49a6b975170ef9b8d6a3c397af00f6 64504 0xffff_0.8.orig.tar.gz
+ b22fafa3ab6902eac89bbcf9c4eca4c9 6884 0xffff_0.8-1.debian.tar.xz
+Vcs-Browser: https://salsa.debian.org/debian/0xffff
+Vcs-Git: https://salsa.debian.org/debian/0xffff.git
+Checksums-Sha256:
+ 2e57c27395a1efd7d5b051751dd85d0def235d3c379822b4bdeed75f19def1c1 1807 0xffff_0.8-1.dsc
+ d600d554bf24d30d5ccfb97dcb55189a9181ef1db98586ae9b98a779188ce03e 64504 0xffff_0.8.orig.tar.gz
+ d17be4ee444b47a6e3310f60f3ac18c7f125282b12e43628b1a2fa3b863c9b4d 6884 0xffff_0.8-1.debian.tar.xz
+Homepage: https://github.com/pali/0xFFFF
+Package-List: 
+ 0xffff deb misc optional arch=any
+Directory: pool/main/0/0xffff
+Priority: source
+Section: misc
+
+Package: 2048-qt
+Binary: 2048-qt
+Version: 0.1.6-1
+Maintainer: Alejandro Garrido Mota <alejandro@debian.org>
+Build-Depends: debhelper (>= 9), qtbase5-dev, qtdeclarative5-dev
+Architecture: any
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ d7c61b93e51607eee4991249a3e6fdfe 1825 2048-qt_0.1.6-1.dsc
+ cca8ebf496c70a2c1a56fbe9e893062b 1863953 2048-qt_0.1.6.orig.tar.gz
+ 1b873d71341f24228527aa6f1e40d340 4136 2048-qt_0.1.6-1.debian.tar.xz
+Vcs-Browser: https://github.com/mogaal/2048-qt
+Vcs-Git: git://github.com/mogaal/2048-qt.git
+Checksums-Sha256:
+ 2191f0bd04abeebffec6625ef47398913f4f71e8f53c08ea6e0d1799cb0a2b45 1825 2048-qt_0.1.6-1.dsc
+ 994b472d9798ebcae6b5e5a733f175f0278ab9f2f6cde1511a08335899e8f892 1863953 2048-qt_0.1.6.orig.tar.gz
+ 5fc441be3afcd22d5ee591726a2ab089514c577317dcc9f4b13ee473b0285ee5 4136 2048-qt_0.1.6-1.debian.tar.xz
+Homepage: https://github.com/xiaoyong/2048-Qt
+Package-List: 
+ 2048-qt deb games optional arch=any
+Directory: pool/main/2/2048-qt
+Priority: optional
+Section: misc

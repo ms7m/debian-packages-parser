@@ -1,4 +1,3 @@
-import time
 import itertools
 
 
@@ -87,7 +86,7 @@ class PackagesParser(object):
     def _parse_to_dict(self):
         end_result = []
 
-        for element_list_index, element_list in enumerate(self._data):
+        for element_list in self._data:
 
             selected_child = []
             for selected_elements_index, selected_element in enumerate(element_list):

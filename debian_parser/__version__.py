@@ -1,4 +1,3 @@
-
 # Version Number
 
 MAJOR = 0

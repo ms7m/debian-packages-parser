@@ -8,7 +8,6 @@ lazy-object-proxy==1.4.3
 loguru==0.4.1
 mccabe==0.6.1
 pathspec==0.8.0
-pkg-resources==0.0.0
 pylint==2.4.4
 regex==2020.4.4
 six==1.14.0

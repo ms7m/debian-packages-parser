@@ -20,7 +20,7 @@ This can include:
 
 - Latest stable build from master (PyPi)
     -   ```
-        pip install debian_packages_parser
+        pip install debian_parser
          ```
 - Latest development build
     - Use the provided ``.whl`` files.
@@ -75,7 +75,7 @@ Tag: purpose::extension
 
 *Code*
 ```python
-from debian_package_parse import PackagesParser
+from debian_parser import PackagesParser
 
 sample_packages_file = open("Packages", "r").read()
 

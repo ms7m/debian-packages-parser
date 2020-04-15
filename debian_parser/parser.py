@@ -4,15 +4,28 @@ import itertools
 
 class PackagesParser(object):
     def __init__(self, raw_packages_file):
+
+        self._extra_strings_added = 0
+
         data_raw = raw_packages_file.splitlines()
 
         if data_raw[0] != "":
             data_raw.insert(0, "")
+            self._extra_strings_added += 1
+
+        if data_raw[-1] != "":
+            data_raw.append("")
+            self._extra_strings_added += 1
 
         self._data_splitted = data_raw
 
+        if self._extra_strings_added != 0:
+            self._extra_strings_added -= 1
+
+        self._parse_to_seperated_lists()
+
     def _splitted_lines(self):
-        return self._data_splitted.count("")
+        return self._data_splitted.count("") - self._extra_strings_added
 
     def _parse_to_seperated_lists(self):
 
@@ -102,10 +115,20 @@ class PackagesParser(object):
                             break
 
                     selected_child.append(
-                        {"tag": selected_element_key, "value": selected_element_value}
+                        {
+                            "tag": selected_element_key.strip(":"),
+                            "value": selected_element_value,
+                        }
                     )
                 else:
                     continue
 
             end_result.append(selected_child)
         return end_result
+
+    def parse(self):
+        if self._data:
+            return self._parse_to_dict()
+
+        self._parse_to_seperated_lists()
+        return self._parse_to_dict()

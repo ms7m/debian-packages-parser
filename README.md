@@ -1,5 +1,7 @@
 # Debian APT Repository Packages Parser
 
+![Test Python Module](https://github.com/ms7m/debian-packages-parser/workflows/Test%20Python%20Module/badge.svg)  ![PythonVersion](https://img.shields.io/badge/Python-3.6%2B-blue?logo=python)  ![PythonVersion](https://img.shields.io/badge/Formatting-Black-black.svg)
+
 ***
 
 > This only supports Python 3.

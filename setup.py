@@ -1,5 +1,5 @@
 
-from setuptools import setup
+from setuptools import Command, find_packages, setup
 from debian_parser import VERSION
 
 import io
@@ -32,12 +32,7 @@ setup(
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
     url=URL,
-    # If your package is a single module, use this instead of 'packages':
-    py_modules=['debian_parser'],
-
-    # entry_points={
-    #     'console_scripts': ['mycli=mymodule:cli'],
-    # },
+    packages=find_packages(exclude=["testing", "*.testing", "*.testing.*", "testing.*"]),
     include_package_data=True,
     license='GNU',
     classifiers=[

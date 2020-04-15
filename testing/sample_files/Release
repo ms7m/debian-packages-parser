@@ -1,0 +1,7 @@
+Archive: stable
+Origin: Debian
+Label: Debian
+Version: 10.3
+Acquire-By-Hash: yes
+Component: main
+Architecture: source

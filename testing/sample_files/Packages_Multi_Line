@@ -1,0 +1,52 @@
+Package: 3proxy
+Version: 0.5.3k-2p
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 1208
+Filename: debs/3proxy_0.5.3k-2p_iphoneos-arm.deb
+Size: 416322
+MD5sum: 870db4e8c1477b2642e401b4ce256def
+Section: Networking
+Priority: optional
+Homepage: http://3proxy.ru/download/
+Description: Sample package with a multiline
+description. Super long.
+Depiction: https://cydia.saurik.com/info/3proxy/
+Name: 3proxy
+Tag: purpose::daemon, role::hacker
+
+Package: adv-cmds
+Version: 119-6
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 536
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Provides: ps
+Filename: debs/adv-cmds_119-6_iphoneos-arm.deb
+Size: 62804
+MD5sum: fb4a7c239d1089eee056df930a61718c
+Section: Administration
+Priority: important
+Description: finger, fingerd, last, lsvfs, md, ps
+Tag: purpose::console, role::hacker
+
+Package: com.spark.airdropconfirm
+Name: AirDropConfirm
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Version: 1.0.0
+Installed-Size: 200
+SHA256: 77cae709321740627124780ef5633ec322c9ba85f2d76e5956c75d8d92f8417a
+SHA1: 44af8ad9d78874702772a158b199aaedb8314fb4
+MD5sum: 7c9772f33ca571b8512f842100ceb6da
+Depiction: https://www.sparkdev.me/package/com.spark.airdropconfirm
+SileoDepiction: https://www.sparkdev.me/sileo/com.spark.airdropconfirm
+Size: 8760
+Filename: download/com.spark.airdropconfirm/1.0.0.deb
+Icon: https://sparkdev.me/package-logo/com.spark.airdropconfirm
+Tag: purpose::extension

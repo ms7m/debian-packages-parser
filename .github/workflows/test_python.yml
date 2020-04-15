@@ -28,7 +28,7 @@ jobs:
       run: |
         pip install pylint
         # stop the build if there are Python syntax errors or undefined names
-        pylint --disable=R,C debian_parser/
+        pylint --errors-only debian_parser/
     - name: Test with pytest
       run: |
         pip install pytest
